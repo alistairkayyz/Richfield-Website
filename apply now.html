@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html>
+	<head> 
+		<meta charset = "utf-8">
+		<!--link to CSS-->
+		<link  href = "style.css" type = "text/css" rel = "stylesheet">
+		<title> RGIT Apply Now </title>		
+	</head>
+	<body>
+		<div class = "container"> 
+			<div class = "main">
+
+                <!--insert logo-->
+                <img class="logo" src="pictures/richfieldLogo.bmp"
+                     width="400" height="120"
+                     alt="Richfield logo">
+
+                <!--create search box-->
+                <div class="search-box">
+                    <input class="search-txt" type="text"
+                           name="" placeholder="Search here..." />
+                    <a class="search-btn" href="#">
+                        <img src="pictures/search.png" width="30%"
+                             height="30%" alt="search" />
+                    </a>
+                </div>
+
+                <!--create navigation bar-->
+                <nav>
+                    <ul>
+                        <li><a href="home.html"> Home Page </a></li>
+                        <li><a href="payment methods.html"> Payment Methods</a></li>
+                        <li><a href="media.html"> Media </a></li>
+                        <li><a href="#"> Campuses </a></li>
+                        <li><a href="#"> Study With US </a></li>
+                        <li>
+                            <a href="programmes.html"> Programs </a>
+                            <ul>
+                                <li><a href="#"> HET </a></li>
+                                <li><a href="#"> FET </a></li>
+                                <li><a href="#"> TVET </a></li>
+                                <li><a href="#"> Skills </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="apply now.html"> Apply Now </a></li>
+                    </ul>
+                </nav>	<!--end navigation bar-->
+
+				<!-- create a form to retrieve user info-->
+                <form class="form" method="post">
+                    <table>
+                        <tr> <!--first name row-->
+                            <td colspan="2">
+                                <input class="text-field" type="text"
+                                       placeholder="First Name" required>
+                            </td>
+                        </tr> <!--end first name row-->
+
+                        <tr> <!--last name row-->
+                            <td colspan="2">
+                                <input class="text-field" type="text"
+                                       placeholder="Last Name" required>
+                            </td>
+                        </tr> <!--end last name row-->
+
+                        <tr> <!--email row-->
+                            <td colspan="2">
+                                <input class="text-field" type="email"
+                                       placeholder="email address" required>
+                            </td>
+                        </tr> <!--end email row-->
+
+                        <tr> <!--Cell number row-->
+                            <td colspan="2">
+                                <input class="text-field" type="tel"
+                                       placeholder="Cell Number(e.g. 012 345 6789)"
+                                       pattern="\\d{3}\ +\d{3} \d{4}" required>
+                            </td>
+                        </tr> <!--end cell number row-->
+
+                        <tr><!--ID number row-->
+                            <td colspan="2">
+                                <input class="text-field" type="text"
+                                       placeholder="ID Number" required>
+                            </td>
+                        </tr> <!--end ID number row-->
+
+                        <tr> <!--date of birth row-->
+                            <td colspan="2">
+                                <input class="text-field" type="date"
+                                       placeholder="Date of Birth" required>
+                            </td>
+                        </tr> <!--end date of birth row-->
+
+                        <tr> <!--course row with drop down menu-->
+                            <td width="250"> Course </td>
+                            <td>
+                                <select class="select" required>
+                                    <option disabled selected value="">-</option>
+                                    <option>HET</option>
+                                    <option>FET</option>
+                                    <option>TVET</option>
+                                    <option>Skills</option>
+                                </select>
+                            </td>
+                        </tr> <!--end course row-->
+
+                        <tr> <!--Highest Education Level row-->
+                            <td> Highest Education Level </td>
+                            <td>
+                                <select class="select">
+                                    <option disabled selected value="">-</option>
+                                    <option>Not Achieved</option>
+                                    <option>Higher Certificate</option>
+                                    <option>Diploma</option>
+                                    <option>Degree</option>
+                                </select>
+                            </td>
+                        </tr> <!--end Highest Education Level row-->
+
+                        <tr><!--identtificatio type row-->
+                            <td> Identification Type </td>
+                            <td>
+                                <input type="radio" name="ID" required>Passport Number
+                                <br>
+                                <input type="radio" name="ID" required>ID Number
+                            </td>
+                        </tr> <!--end identification type row-->
+
+                        <tr> <!--Gender row-->
+                            <td> Gender </td>
+                            <td>
+                                <input type="radio" name="Gender" required>Male
+                                <br>
+                                <input type="radio" name="Gender" required>Female
+                            </td>
+                        </tr> <!--end gender row-->
+
+                        <tr> <!--population group row-->
+                            <td> Population Group </td>
+                            <td>
+                                <select class="select">
+                                    <option disabled selected value="">-</option>
+                                    <option>African</option>
+                                    <option>Coloured</option>
+                                    <option>Indian/Asian</option>
+                                    <option>White</option>
+                                    <option>Other</option>
+                                </select>
+                            </td>
+                        </tr> <!--end population group row-->
+
+                        <tr> <!--nationality row-->
+                            <td colspan="2">
+                                <input class="text-field" type="text"
+                                       placeholder="Nationality" required>
+                            </td>
+                        </tr> <!--end nationality row-->
+
+                        <tr> <!--address row-->
+                            <td colspan="2">
+                                <textarea placeholder="Address"
+                                          rows="5" cols="120" required></textarea>
+                            </td>
+                        </tr> <!--end address row-->
+
+                        <tr> <!--submit button row-->
+                            <td>
+                                <input class="btn-send" type="submit" value="Send Button">
+                            </td>
+                        </tr> <!--end submit button row-->
+                    </table> <!--end table-->
+                </form>	<!--end form-->
+			</div>	<!--end class main-->	
+		</div> <!--end class container-->
+        <!--class for footer-->
+        <div class="footer-container">
+            <footer class="footer">
+                <p>
+                    &reg;Website designed by 144979&trade; BSc Information
+                    Technology 2019 &copy;All Right Reserved.
+                </p>
+            </footer>
+        </div> <!--end class footer-->
+	</body>	
+</html>
